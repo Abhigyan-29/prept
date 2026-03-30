@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Prept — AI-Powered Interview Preparation Platform
 
-## Getting Started
+Prept is a full-stack web application that helps users prepare for technical interviews through **1:1 mock interviews with real experts** and **AI-powered feedback**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+* 🔐 Authentication using Clerk
+* 👨‍💻 Role-based system (Interviewer / Interviewee)
+* 📅 Book mock interview sessions
+* 🤖 AI-powered feedback system
+* 💳 Credit-based system for booking sessions
+* 🌌 Modern UI with animated backgrounds
+* ⚡ Fast and scalable architecture using Next.js + Prisma
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js (App Router), Tailwind CSS
+* **Backend:** Prisma ORM
+* **Database:** Supabase (PostgreSQL)
+* **Authentication:** Clerk
+* **UI Components:** Shadcn UI
+* **Icons:** Lucide React
+
+---
+
+## 📁 Project Structure
+
+```
+prept/
+│── app/                # Next.js App Router pages
+│── components/         # UI components
+│── lib/                # Utilities & Prisma client
+│── prisma/             # Prisma schema
+│── public/             # Static assets
+│── .env                # Environment variables (NOT pushed)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ⚙️ Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the root directory:
 
-## Learn More
+```
+DATABASE_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Clone the repository
 
-## Deploy on Vercel
+```
+git clone https://github.com/your-username/prept.git
+cd prept
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Install dependencies
+
+```
+npm install
+```
+
+---
+
+### 3. Setup database
+
+* Create a Supabase project
+* Add your `DATABASE_URL` to `.env`
+
+---
+
+### 4. Run the development server
+
+```
+npm run dev
+```
+
+---
+
+### 5. Open in browser
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔑 Key Concepts
+
+* Uses **Server Components + Prisma** for direct DB access
+* Uses **Client Components for Clerk UI**
+* Clean separation of backend and frontend logic
+
+---
+
+## 📌 Future Improvements
+
+* 💬 Real-time video interviews
+* 🧠 Advanced AI feedback
+* 📊 User performance analytics
+* 🌍 Multi-language support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a PR.
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Abhigyan Prakash**
+
+* Full Stack Developer
+* Passionate about AI & scalable systems
+
+---
+
+## ⭐ Show your support
+
+If you like this project, give it a ⭐ on GitHub!
