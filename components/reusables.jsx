@@ -1,16 +1,16 @@
 export const GrayTitle = ({ children }) => (
-  <span className="bg-linear-to-br from-stone-100 via-stone-300 to-stone-500 bg-clip-text text-transparent">
+  <span className="bg-linear-to-r from-stone-100 via-stone-400 to-stone-100 bg-[length:200%_auto] animate-shine bg-clip-text text-transparent">
     {children}
   </span>
 );
 export const GoldTitle = ({ children }) => (
-  <span className="bg-linear-to-br from-amber-300 via-amber-400 to-amber-600 bg-clip-text text-transparent">
+  <span className="bg-linear-to-r from-red-400 via-red-600 to-red-400 bg-[length:200%_auto] animate-shine bg-clip-text text-transparent">
     {children}
   </span>
 );
 export const SectionLabel = ({ children }) => (
-  <p className="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 tracking-[0.14em] uppercase mb-4">
-    <span className="w-4 h-px bg-amber-400" />
+  <p className="inline-flex items-center gap-2 text-xs font-semibold text-red-500 tracking-[0.14em] uppercase mb-4">
+    <span className="w-4 h-px bg-red-500" />
     {children}
   </p>
 );

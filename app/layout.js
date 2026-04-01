@@ -36,8 +36,9 @@ export default function RootLayout({ children }) {
         <body className={`${lora.variable} ${dmSans.variable} font-sans`}>
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="dark"
+            forcedTheme="dark"
+            enableSystem={false}
             disableTransitionOnChange
           >
             <Header />

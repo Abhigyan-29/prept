@@ -124,3 +124,26 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee var(--duration, 30s) linear infinite;
+  }
+  .animate-shine {
+    animation: shine 5s linear infinite;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-50%)); }
+  }
+
+  @keyframes shine {
+    from { background-position: 0 0; }
+    to { background-position: -200% 0; }
+  }
+
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+}

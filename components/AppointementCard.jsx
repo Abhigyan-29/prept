@@ -7,8 +7,8 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Video, Sparkles } from "lucide-react";
-import { FeedbackModal } from "./FeedbackModal";
-import { formatDate, formatDuration, formatTime } from "@/lib/helpers";
+ import { FeedbackModal } from "./FeedbackModal";
+ import { formatDate, formatDuration, formatTime } from "@/lib/helpers";
 import { RATING_LABEL, RATING_STYLES, STATUS_STYLES } from "@/lib/data";
 
 export function AppointmentCard({ booking, mode, isPast = false }) {
@@ -36,7 +36,7 @@ export function AppointmentCard({ booking, mode, isPast = false }) {
   const creditsStyle =
     mode === "interviewer"
       ? "border-green-500/20 bg-green-500/10 text-green-400"
-      : "border-amber-400/20 bg-amber-400/5 text-amber-400";
+      : "border-red-500/20 bg-red-500/5 text-red-500";
 
   const isUpcoming = status === "SCHEDULED";
 
@@ -51,7 +51,7 @@ export function AppointmentCard({ booking, mode, isPast = false }) {
         }
       />
 
-      <article className="group relative bg-[#0f0f11] border border-white/10 transition-all duration-300 hover:-translate-y-0.5 rounded-2xl bg-linear-to-t from-transparent via-transparent to-amber-300/10 p-7 flex flex-col gap-6 self-start">
+      <article className="group relative bg-[#0f0f11] border border-white/10 transition-all duration-500 hover:-translate-y-1 hover:border-red-500/40 hover:shadow-[0_0_25px_rgba(239,68,68,0.15)] rounded-2xl bg-linear-to-t from-transparent via-transparent to-red-400/10 p-7 flex flex-col gap-6 self-start">
         <div className="flex items-start justify-between gap-4">
           <div className="flex items-center gap-4 min-w-0">
             <Avatar className="w-14 h-14 border border-white/10 rounded-2xl shrink-0">
@@ -60,7 +60,7 @@ export function AppointmentCard({ booking, mode, isPast = false }) {
                 alt={person?.name}
                 className="rounded-2xl"
               />
-              <AvatarFallback className="rounded-2xl bg-amber-400/10 border border-amber-400/20 text-amber-400 text-lg font-medium">
+              <AvatarFallback className="rounded-2xl bg-red-500/10 border border-red-500/20 text-red-500 text-lg font-medium">
                 {person?.name?.[0] ?? "?"}
               </AvatarFallback>
             </Avatar>
@@ -85,7 +85,7 @@ export function AppointmentCard({ booking, mode, isPast = false }) {
                   {person.categories.slice(0, 3).map((cat) => (
                     <span
                       key={cat}
-                      className="text-[10px] px-2 py-0.5 rounded-md border border-amber-400/20 bg-amber-400/5 text-amber-400 leading-tight"
+                      className="text-[10px] px-2 py-0.5 rounded-md border border-red-500/20 bg-red-500/5 text-red-500 leading-tight"
                     >
                       {cat.replace("_", " ")}
                     </span>
@@ -185,7 +185,7 @@ export function AppointmentCard({ booking, mode, isPast = false }) {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="gap-1.5 border-amber-400/20 text-amber-400 hover:bg-amber-400/10 hover:border-amber-400/40"
+                    className="gap-1.5 border-red-500/20 text-red-500 hover:bg-red-500/10 hover:border-red-500/40"
                     onClick={() => setFeedbackOpen(true)}
                   >
                     <Sparkles size={12} />

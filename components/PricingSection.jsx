@@ -20,7 +20,7 @@ export default function CreditButton({ role, credits }) {
     <>
       <Button
         variant="outline"
-        className="border-amber-400/20 text-amber-400 cursor-pointer"
+        className="border-red-500/20 text-red-500 cursor-pointer"
         onClick={handleClick}
       >
         <Coins size={14} />
