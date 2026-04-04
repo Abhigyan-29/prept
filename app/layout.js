@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
   
   <p className="text-sm tracking-wide">
     <span className="font-semibold text-yellow-400">Skill</span> heavy.{" "}
-    <span className="font-semibold text-yellow-400">Vibe</span> deadly. (80/20)
+    <span className="font-semibold text-yellow-400">Vibe</span> deadly. 
   </p>
 
   <p className="mt-2 font-semibold">
