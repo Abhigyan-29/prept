@@ -46,8 +46,10 @@ export default function RootLayout({ children }) {
             <Toaster richColors />
 
             <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
-             <strong>Skill</strong> heavy. <strong>Vibe</strong> deadly. (80/20)<br>
-<p><strong>Abhigyan</strong></p>
+           <p className="text-sm tracking-wide">
+  <span className="font-semibold text-white">Skill</span> heavy.{" "}
+  <span className="font-semibold text-yellow-400">Vibe</span> deadly. (80/20)
+</p>
             </footer>
           </ThemeProvider>
         </body>
