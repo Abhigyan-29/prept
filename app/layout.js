@@ -46,7 +46,8 @@ export default function RootLayout({ children }) {
             <Toaster richColors />
 
             <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
-             Fully Vibe-Coded by Abhigyan 🔥
+             Skill heavy. Vibe deadly. (80:20)
+<p>Abhigyan</p>
             </footer>
           </ThemeProvider>
         </body>
