@@ -47,9 +47,10 @@ export default function RootLayout({ children }) {
 
             <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
            <p className="text-sm tracking-wide">
-  <span className="font-semibold text-white">Skill</span> heavy.{" "}
+  <span className="font-semibold text-yellow">Skill</span> heavy.{" "}
   <span className="font-semibold text-yellow-400">Vibe</span> deadly. (80/20)
-</p>
+</p></br>
+  <p><strong> Made by Abhigyan</strong></p>
             </footer>
           </ThemeProvider>
         </body>
