@@ -45,13 +45,18 @@ export default function RootLayout({ children }) {
             <main className="min-h-screen">{children}</main>
             <Toaster richColors />
 
-            <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
-           <p className="text-sm tracking-wide">
-  <span className="font-semibold text-yellow">Skill</span> heavy.{" "}
-  <span className="font-semibold text-yellow-400">Vibe</span> deadly. (80/20)
-</p></br>
-  <p><strong> Made by Abhigyan</strong></p>
-            </footer>
+         <footer className="relative z-10 border-t border-white/7 py-12 mx-auto px-6 flex flex-col items-center justify-center text-stone-400 text-center">
+  
+  <p className="text-sm tracking-wide">
+    <span className="font-semibold text-yellow-400">Skill</span> heavy.{" "}
+    <span className="font-semibold text-yellow-400">Vibe</span> deadly. (80/20)
+  </p>
+
+  <p className="mt-2 font-semibold">
+    Made by Abhigyan
+  </p>
+
+</footer>
           </ThemeProvider>
         </body>
       </html>
